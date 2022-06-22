@@ -1,10 +1,24 @@
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Array:
+    def __init__(self, ar = []):
+        self.array = ar
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+
+    def BubbleSort(self):
+        # loop to access each array element
+        for i in range(len(self.array)):
+
+            # loop to compare array elements
+            for j in range(0, len(self.array) - i - 1):
+
+                # compare two elements
+                if self.array[j] > self.array[j + 1]:
+                    # swapping elements
+                    temp = self.array[j]
+                    self.array[j] = self.array[j + 1]
+                    self.array[j + 1] = temp
+        return self.array
+
+
 
 
