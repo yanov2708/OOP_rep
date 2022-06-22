@@ -1,4 +1,4 @@
-# paCha_rep
+# OOP_rep
 OOP.
 
 1. Design and implement a solution with one or several classes with interface-based API for one of the tasks listed below.
